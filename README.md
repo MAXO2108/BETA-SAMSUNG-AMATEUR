@@ -1,0 +1,2 @@
+# BETA-SAMSUNG-AMATEUR
+beta-test
