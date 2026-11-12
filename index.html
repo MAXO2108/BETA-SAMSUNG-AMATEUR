@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя история Samsung Galaxy</title>
+    <style>
+        :root {
+            --bg-color: #0b0d13;
+            --card-bg: #151924;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.3);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1rem 4rem;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        header p {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid #262c3d;
+        }
+        .era-card {
+            background: var(--card-bg);
+            border: 1px solid #262c3d;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .era-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px var(--accent-glow);
+            border-color: var(--accent);
+        }
+        .era-card::before {
+            content: '';
+            position: absolute;
+            left: -2.6rem;
+            top: 2.2rem;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 4px solid var(--bg-color);
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.3rem 0.8rem;
+            border-radius: 999px;
+            margin-bottom: 0.8rem;
+        }
+        .era-card h2 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #93c5fd;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .era-card p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #262c3d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Моя эволюция Galaxy</h1>
+            <p>Личная история о том, как менялись технологии в моих руках: от первого компактного смартфона до флагмана с искусственным интеллектом.</p>
+        </header>
+
+        <main class="timeline">
+            <article class="era-card">
+                <span class="badge">Глава 01 • Начало</span>
+                <h2>Samsung Galaxy J5</h2>
+                <div class="subtitle">Эпоха надёжности и первых открытий</div>
+                <p>Отправная точка моего пути с Samsung. Компактный, понятный и надёжный смартфон с фирменным AMOLED-экраном и классической кнопкой «Домой», который стал верным спутником на каждый день.</p>
+            </article>
+
+            <article class="era-card">
+                <span class="badge">Глава 02 • Первый восторг</span>
+                <h2>Samsung Galaxy A70</h2>
+                <div class="subtitle">Самый первый крутой телефон в жизни</div>
+                <p>Настоящий вау-эффект: огромный безрамочный дисплей, сканер отпечатков прямо в экране и переливающийся корпус. Телефон, который дарил искреннее удовольствие от каждого включения.</p>
+            </article>
+
+            <article class="era-card">
+                <span class="badge">Глава 03 • Глоток свежего воздуха</span>
+                <h2>Samsung Galaxy A33 и Galaxy A53</h2>
+                <div class="subtitle">Возвращение плавности после Galaxy A13</div>
+                <p>После простого и неспешного опыта с Galaxy A13 переход на A33, а затем на A53 ощущался как глоток свежего воздуха. Высокая герцовка экранов, защита от воды, стереозвук и отличные камеры снова вернули радость от использования.</p>
+            </article>
+
+            <article class="era-card">
+                <span class="badge">Глава 04 • Высшая лига</span>
+                <h2>Samsung Galaxy S23 Ultra</h2>
+                <div class="subtitle">Мой самый первый флагман Samsung</div>
+                <p>Переход в мир бескомпромиссных технологий. Мощнейшее железо, невероятный зум камеры на 200 МП и встроенный стилус S Pen, который открыл совершенно новый сценарий работы со смартфоном.</p>
+            </article>
+
+            <article class="era-card">
+                <span class="badge">Глава 05 • Настоящее и будущее</span>
+                <h2>Samsung Galaxy S24 Ultra</h2>
+                <div class="subtitle">Революция ИИ прямо в телефоне — основной смартфон сегодня</div>
+                <p>Титановый корпус, плоский антибликовый экран и встроенный Galaxy AI. Искусственный интеллект прямо в кармане сделал повседневные задачи, работу с фото и общение невероятно быстрыми и умными.</p>
+            </article>
+        </main>
+
+        <footer>
+            <p>Создано с любовью к технологиям • Моя история Galaxy</p>
+        </footer>
+    </div>
+</body>
+</html>
